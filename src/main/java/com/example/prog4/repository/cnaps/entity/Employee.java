@@ -1,7 +1,7 @@
 package com.example.prog4.repository.cnaps.entity;
 
-import com.example.prog4.repository.base.entity.enums.Csp;
-import com.example.prog4.repository.base.entity.enums.Sex;
+import com.example.prog4.repository.main.entity.enums.Csp;
+import com.example.prog4.repository.main.entity.enums.Sex;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.ColumnTransformer;
