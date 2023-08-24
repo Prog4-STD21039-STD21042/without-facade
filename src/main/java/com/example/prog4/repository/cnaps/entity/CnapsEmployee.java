@@ -34,7 +34,7 @@ public class CnapsEmployee implements Serializable {
     @GeneratedValue(strategy = IDENTITY)
     private String id;
     private String cin;
-    private String cnaps;
+    private String cnapsNumber;
     private String image;
     private String address;
     private String lastName;
