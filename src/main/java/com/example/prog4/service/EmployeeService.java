@@ -5,6 +5,7 @@ import com.example.prog4.repository.main.MainEmployeeRepository;
 import com.example.prog4.repository.main.dao.EmployeeManagerDao;
 import com.example.prog4.repository.main.entity.Employee;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -15,6 +16,7 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class EmployeeService {
+    @Qualifier("mainEmployeeRepository")
     private MainEmployeeRepository repository;
     private EmployeeManagerDao employeeManagerDao;
 
